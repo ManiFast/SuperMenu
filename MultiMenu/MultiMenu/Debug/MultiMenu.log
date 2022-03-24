@@ -1,0 +1,4 @@
+﻿  MultiMenu.cpp
+H:\Disk\qwerty\C++\My projects\MultiMenu\MultiMenu\MultiMenu.cpp(60,21): warning C4018: '<': signed/unsigned mismatch
+H:\Disk\qwerty\C++\My projects\MultiMenu\MultiMenu\MultiMenu.cpp(86,19): warning C4018: '<': signed/unsigned mismatch
+  MultiMenu.vcxproj -> H:\Disk\qwerty\C++\My projects\MultiMenu\Debug\MultiMenu.exe
