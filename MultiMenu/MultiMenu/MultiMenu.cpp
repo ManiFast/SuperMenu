@@ -75,43 +75,42 @@ int main()
 
 		switch (ch)
 		{
-		case ESC:
-			beingDo = false;
-			break;
+			case ESC: beingDo = false; break;
+			case UP: activeMenu--; break;
+			case DOWN: activeMenu++; break;
+			case ENTER:
+				system("cls");
+				if (activeMenu == 0)
+				{
+					game();
+				}
+				if (activeMenu == 1)
+				{
+					//...
+				}
+				if (activeMenu == 2)
+				{
+					beingDo = false;
+				}
+				else
+				{
+					Gotoxy(50, 13);
+					SetConsoleTextAttribute(hStdOut, FOREGROUND_GREEN);
+					cout << "User choose " << menu[activeMenu] << endl;
+					_getch();
+				}
 
-		case UP:
-			if (activeMenu > 0)
-				activeMenu--;
-			break;
+				break;
 
-		case DOWN:
-			if (activeMenu < size(menu)-1)
-				activeMenu++;
-			break;
-
-		case ENTER:
-			system("cls");
-			if (activeMenu == 3)
-			{
-				beingDo = false;
-			}
-			else
-			{
-				Gotoxy(50, 13);
-				SetConsoleTextAttribute(hStdOut, FOREGROUND_GREEN);
-				cout << "User choose " << menu[activeMenu] << endl;
-				_getch();
-			}
-
-			break;
-
-		default:
-			cout << "Code " << (int)ch << "   ";		// Space needed order to clear old numbers
-			break;
+			default:
+				cout << "Code " << (int)ch << "   ";		// Space needed order to clear old numbers
+				break;
 		}
 
 		
-		if (activeMenuItem < 0) activeMenuItem = 1;
+		// Not go beyond the menu
+		if (activeMenuItem < 0) activeMenuItem = 0;
+        	if (activeMenuItem >= size(menu)) activeMenuItem = size(menu)-1;
 
 	}
 
