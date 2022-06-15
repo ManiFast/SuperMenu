@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include <Windows.h>
-#include <conio.h>
+#include <Windows.h>	// Fro 'speep()', graphic and etc...
+#include <conio.h>	// I dont know for what it was created but I use only '_getch()' from it )
 
 #include <string>
 #include <vector>
@@ -23,6 +23,8 @@ void ConsoleCursorVisible(bool show)
 	structCursorInfo.bVisible = show;
 	SetConsoleCursorInfo(hStdOut, &structCursorInfo);
 }
+
+//========== MAIN =============
 
 int main()
 {
