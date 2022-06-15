@@ -26,18 +26,19 @@ void ConsoleCursorVisible(bool show)
 
 //========== MAIN =============
 
+const char UP = 72;
+const char DOWN = 80;
+const char LEFT = 75;
+const char RIGHT = 77;
+const char ENTER = 13;
+const char ESC = 27;
+
 int main()
 {
 	// Starting arguments
 	SetConsoleTitle(L"LOL");
 	ConsoleCursorVisible(false);
 	//setlocale(LC_ALL, "ru");
-
-	// Const values
-	const char ESC = 27;
-	const char UP = 72;
-	const char DOWN = 80;
-	const char ENTER = 13;
 
 	//const int menuSIZE = 4;
 	string menu[] = { "New game   ", "Load   ", "Settings    ", "Exit    "};
