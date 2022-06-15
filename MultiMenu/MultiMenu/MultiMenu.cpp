@@ -110,7 +110,8 @@ int main()
 			break;
 		}
 
-
+		
+		if (activeMenuItem < 0) activeMenuItem = 1;
 
 	}
 
