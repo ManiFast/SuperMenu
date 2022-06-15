@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> 
 
 #include <Windows.h>	// Fro 'speep()', graphic and etc...
 #include <conio.h>	// I dont know for what it was created but I use only '_getch()' from it )
