@@ -109,9 +109,9 @@ int main()
 		}
 
 		
-		// Not go beyond the menu
-		if (activeMenuItem < 0) activeMenuItem = 0;
-        	if (activeMenuItem >= size(menu)) activeMenuItem = size(menu)-1;
+		// Doesnt go beyond menu activeMenuItem
+		if (activeMenu < 0) activeMenu = 0;
+        	if (activeMenu >= size(menu)) activeMenu = size(menu)-1;
 
 	}
 
