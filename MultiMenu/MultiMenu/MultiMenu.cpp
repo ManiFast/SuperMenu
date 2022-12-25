@@ -1,6 +1,6 @@
 #include <iostream> 
 
-#include <Windows.h>	// Fro 'speep()', for coloring cmd and graphic and etc...
+#include <Windows.h>	// For 'speep()', for coloring cmd and graphic and etc...
 #include <conio.h>	// I dont know for what it was created but I use only '_getch()' from it )
 
 #include <string>
